@@ -26,13 +26,12 @@
   },
   "homepage": "https://github.com/JairusSW/as-http#readme",
   "dependencies": {
-    "as-console": "^4.0.3",
-    "cross-fetch": "^3.0.6",
-    "fastify": "^3.14.2",
-    "node-fetch": "^2.6.1"
+    "cross-fetch": "^3.0.6"
   },
   "devDependencies": {
     "@assemblyscript/loader": "^0.18.24",
-    "assemblyscript": "^0.18.24"
+    "as-console": "^4.0.3",
+    "assemblyscript": "^0.18.24",
+    "fastify": "^3.14.2"
   }
 }
