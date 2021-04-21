@@ -3,6 +3,7 @@
   "version": "1.2.0",
   "description": "Http Client For AssemblyScript",
   "main": "imports.js",
+  "types": "./assembly/HTTP.ts",
   "scripts": {
     "test": "node tests",
     "asbuild:untouched": "asc assembly/HTTP.ts --exportTable --exportRuntime --target debug",
