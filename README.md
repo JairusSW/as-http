@@ -33,6 +33,9 @@ import { http } from 'as-http'
 
 const headers = new Map<string, string>()
 
+headers.set('token', 'GqC2F-e[.2,s</01kdFw')
+//--> Add/Edit any header
+
 http.get('http://example.com/', headers, (error, body) => {
 
     console.log('Response: ' + body)
@@ -46,9 +49,45 @@ import { http } from 'as-http'
 
 const headers = new Map<string, string>()
 
+headers.set('token', 'GqC2F-e[.2,s</01kdFw')
+//--> Add/Edit any header
+
 const data = 'Hello, Server!'
+//--> Add data chunk (Multipart coming soon)
 
 http.post('http://example.com/', headers, data, (error, body) => {
+
+    console.log('Response: ' + body)
+
+})
+```
+
+## Examples
+
+**Get a random joke**
+
+```js
+import { http } from 'as-http'
+
+const headers = new Map<string, string>()
+
+http.get('https://official-joke-api.appspot.com/random_joke', headers, (error, body) => {
+
+    console.log('Response: ' + body)
+
+})
+```
+
+**Get youtube search results**
+
+```js
+import { http } from 'as-http'
+
+const headers = new Map<string, string>()
+
+const query = 'Marshmallow'
+
+http.get(`https://youtubestream.jairussw.repl.co/search?query=${query}&limit=5`, headers, (error, body) => {
 
     console.log('Response: ' + body)
 
